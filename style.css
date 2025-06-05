@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 1rem 3rem;
+}
+
+.buttons{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#start-btn,
+#clear-btn{
+    width: 100px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.sketch-board{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    flex: 0;
+}
+
+.column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+}
+
+.row{
+    flex-basis: auto;
+    width: 20px;
+    height: 20px;
+    border: solid #778899;
+}
+
+.row:after{
+    content:"";
+    display: block;
+    padding-bottom: 100%;
+}
